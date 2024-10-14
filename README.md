@@ -61,7 +61,7 @@ This project is based on a script from [petyasoft](https://github.com/petyasoft)
    * Download and extract the archive or use the command
      
      ```
-     git clone [REPOSITORY URL]
+     git clone https://github.com/duonanotte/agent301.git
      ```
    * Navigate to the script folder:
 
