@@ -17,5 +17,7 @@ class Settings(BaseSettings):
     SLEEP_TIME: list[int] = [21000, 32000]
     BLACKLIST: Set[str] = {'stars_purchase', 'invite_3_friends', 'transaction', 'boost', 'subscribe'}
 
+    USE_PROXY: bool = False
+
 
 settings = Settings()
