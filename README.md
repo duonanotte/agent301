@@ -53,6 +53,7 @@ This project is based on a script from [petyasoft](https://github.com/petyasoft)
 | **MAX_SPIN_PER_CYCLE**    | <small>Maximum number of spins in the roulette, default is `5`</small>                  |
 | **SLEEP_TIME**            | <small>Time each session sleeps after completing all actions `[21000, 32000]`</small>   |
 | **BLACKLIST**             | <small>Tasks that the bot should not perform</small>                                    |
+| **USE_PROXY**             | <small>`True` or `False`(default `False`)</small>                                       |
 
 
 ## Step 1: Preparation
