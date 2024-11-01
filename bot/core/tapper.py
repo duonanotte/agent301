@@ -107,7 +107,7 @@ class Tapper:
 
         return session_data['user_agent'], session_data['sec_ch_ua']
 
-    async def check_proxy(self, http_client: aiohttp.ClientSession) -> bool:
+    async def check_proxy(self) -> bool:
         try:
             response = await self.http_client.get(url='https://ipinfo.io/json', timeout=aiohttp.ClientTimeout(total=5))
             data = await response.json()
@@ -415,7 +415,7 @@ class Tapper:
             if not self.proxy:
                 logger.error(f"{self.session_name} | Proxy is not set. Aborting operation.")
                 return
-            if not await self.check_proxy(http_client):
+            if not await self.check_proxy():
                 logger.error(f"{self.session_name} | Proxy check failed. Aborting operation.")
                 return
 
