@@ -107,7 +107,7 @@ class Tapper:
 
         return session_data['user_agent'], session_data['sec_ch_ua']
 
-    async def check_proxy(self) -> bool:
+    async def check_proxy(self, http_client: aiohttp.ClientSession) -> bool:
         try:
             response = await self.http_client.get(url='https://ipinfo.io/json', timeout=aiohttp.ClientTimeout(total=5))
             data = await response.json()
